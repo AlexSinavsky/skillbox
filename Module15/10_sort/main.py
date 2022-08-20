@@ -7,11 +7,5 @@ for numb in base:
     if numb < minNum:
         minNum = numb
 baseNew.append(minNum)
-while longNew < long:
-    count = 0
-    for i in long:
-        if base[0] < base[i]:
-            min = base[0]
-        else
-``  print(baseNew)
 
+print(baseNew)
