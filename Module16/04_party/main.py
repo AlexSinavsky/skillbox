@@ -15,8 +15,11 @@ while question != 'пора спать':
             else:
                 print('Прости', name, 'но мест нет')
             if question == 'ушел':
-                print('Пока,', name)
-                guests.remove(name)
+                if name in guests:
+                    print('Пока,', name)
+                    guests.remove(name)
+                else:
+                    print('Такого гостя нет на вечеринке')
         else:
             print('Вечеринка закончилась, все легли спать.')
     else:
