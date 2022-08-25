@@ -1,1 +1,4 @@
-# TODO здесь писать код
+base = [list(range(x, x + 9, 4)) for x in range(1, 5)]
+print(base)
+
+
