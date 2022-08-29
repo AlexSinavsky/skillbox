@@ -1,6 +1,3 @@
 text = 'dfbhvsdxdhcz'
 print('Исходная строка:', text)
-firstH = text.index('h')
-revTxt = text[-1::-1]
-lastH = len(text) - 1 - revTxt.index('h')
-print('Измененная строка:', text[:firstH] + text[lastH:firstH:-1] + text[lastH:])
+print('Измененная строка:', text[:text.find('h')] + text[text.rfind('h'):text.find('h'):-1] + text[text.rfind('h'):])
